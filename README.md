@@ -22,6 +22,7 @@ service unattended-upgrades restart
 
 ### Configure git
 ```
+git config --global push.default simple
 git config --global user.email <insert your email address here
 git config --global user.name "<insert your full name here>"
 ```
