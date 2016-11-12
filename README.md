@@ -21,14 +21,16 @@ service unattended-upgrades restart
 `echo "Europe/Zurich" | tee /etc/timezone && dpkg-reconfigure --frontend noninteractive tzdata`
 
 ### Configure git
-`git config --global user.email <insert your email address here`
-`git config --global user.name "<insert your full name here>"`
+```
+git config --global user.email <insert your email address here
+git config --global user.name "<insert your full name here>"
+```
 
 ### clone the repo with the .dot_files and some configuration
 `git clone git@github.com:SebastienPittet/config-files.git`
 
 ### Apply the configuration needed
-```csh
+```sh
 cd config-files
 cp .bash* ~
 cp ./etc/ssh/* /etc/ssh/
@@ -41,15 +43,17 @@ service ntp restart
 ```
 
 # Install ansible
-```
+```sh
 easy_install pip
 pip install ansible
 ```
 
 ### Clone the current repo
-`git clone git@github.com:SebastienPittet/ansible-exoscale.git`
-`cd ansible-exoscale`
-`ansible-playbook create-web-server`
+```sh
+git clone git@github.com:SebastienPittet/ansible-exoscale.git
+cd ansible-exoscale
+ansible-playbook create-web-server
+```
 
 
 
