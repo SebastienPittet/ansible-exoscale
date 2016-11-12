@@ -26,7 +26,7 @@ git config --global user.email <insert your email address here
 git config --global user.name "<insert your full name here>"
 ```
 
-### clone the repo with the .dot_files and some configuration
+### Clone the repo with the .dot_files and some configuration
 `git clone git@github.com:SebastienPittet/config-files.git`
 
 ### Apply the configuration needed
